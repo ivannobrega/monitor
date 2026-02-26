@@ -1,0 +1,12 @@
+export { default as Hero } from "./Hero";
+export { default as Statement } from "./Statement";
+export { default as Problem } from "./Problem";
+export { default as Solution } from "./Solution";
+export { default as Services } from "./Services";
+export { default as Authority } from "./Authority";
+export { default as SocialProof } from "./SocialProof";
+export { default as Partnership } from "./Partnership";
+export { default as BusinessModel } from "./BusinessModel";
+export { default as FinalCTA } from "./FinalCTA";
+export { default as Footer } from "./Footer";
+export { default as WhatsappFloating } from "./WhatsappFloating";

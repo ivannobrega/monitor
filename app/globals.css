@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* ─── Monitor Valuation — Design Tokens ───────────────────────── */
+:root {
+  /* Backgrounds — petroleum blue-green */
+  --mv-surface-deep:    #041A1F;
+  --mv-surface-card:    #062B2E;
+  --mv-surface-hover:   #083338;
+
+  /* Borders */
+  --mv-border:          #0d4a52;
+  --mv-border-dim:      #0a5a60;
+
+  /* Typography */
+  --mv-text-primary:    #e4f7f3;
+  --mv-text-muted:      #5f9ea0;
+
+  /* Accent — mint/teal (logo identity) */
+  --mv-accent:          #00F0AC;
+  --mv-accent-hover:    #00d49a;
+
+  /* Base */
+  --background: var(--mv-surface-deep);
+  --foreground: var(--mv-text-primary);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), Montserrat, Arial, sans-serif;
+}
+
+/* ─── Serif → Georgia (system font, no import needed) ─────────── */
+.font-serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ─── Hero title — responsive sizing via CSS (Tailwind v4 arbitrary breakpoints unreliable) */
+.hero-title {
+  font-size: 42px;
+}
+@media (min-width: 768px)  { .hero-title { font-size: 58px; } }
+@media (min-width: 1024px) { .hero-title { font-size: 72px; } }
+@media (min-width: 1280px) { .hero-title { font-size: 88px; } }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(lsof -ti :3000)",
+      "Bash(lsof -p 913,17779,18070 -a -i :3000)",
+      "Bash(kill 17779)",
+      "Bash(npm install framer-motion --save)",
+      "Bash(npm run build)",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
